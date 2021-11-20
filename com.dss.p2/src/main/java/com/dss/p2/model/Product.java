@@ -3,6 +3,9 @@ package com.dss.p2.model;
 import javax.persistence.Id;
 import javax.persistence.GenerationType;
 import javax.persistence.GeneratedValue;
+
+import java.util.function.Predicate;
+
 import javax.persistence.Entity;
 
 @Entity
@@ -28,6 +31,10 @@ public class Product {
 		this(nombre, "", "", precio);
 	}
 
+	public long getId() {
+		return id;
+	}
+
 	public String getNombre() {
 		return nombre;
 	}
@@ -50,5 +57,10 @@ public class Product {
 
 	public void setPrecio(double precio) {
 		this.precio = precio;
+	}
+	
+	public static Predicate<Product> containsNombre(String nombre) 
+	{
+	    return p -> p.getNombre().equals(nombre);
 	}
 }
