@@ -35,10 +35,17 @@ public class ProductController {
 		return catalogo.get(num);
 	}
 	
-	@PostMapping("/addProduct")
-	public void addProduct(@RequestParam(value = "name", defaultValue = "---") String name, 
-			@RequestParam(value = "num", defaultValue = "0") int num) {
+	@GetMapping("/catalogoCompleto")
+	public Object[] catalogoCompleto() {
+		return catalogo.toArray();
+	}
+	
+	@PostMapping("/addBasicProduct")
+	public Product addBasicProduct(@RequestParam(value = "name", defaultValue = "---") String name, 
+			@RequestParam(value = "precio", defaultValue = "0") double precio) {
+		catalogo.add(new Product(name, precio));
 		
+		return catalogo.get(0);
 	}
 
 }
