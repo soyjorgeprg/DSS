@@ -1,0 +1,1 @@
+docker run --name mysqlspring -e MYSQL_ROOT_PASSWORD=prueba123 -p 3306:3306 -p 33060:33060 -d mysql:8.0
