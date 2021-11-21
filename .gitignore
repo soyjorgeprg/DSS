@@ -26,3 +26,5 @@ hs_err_pid*
 .metadata/*
 com.dss.spring.data.di/*
 /.metadata/
+**/target/**
+practica2/target/**
