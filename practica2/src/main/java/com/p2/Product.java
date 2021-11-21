@@ -1,4 +1,4 @@
-package com.example.accessingdatamysql;
+package com.p2;
 
 import javax.persistence.Id;
 import javax.persistence.GenerationType;

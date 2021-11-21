@@ -1,4 +1,4 @@
-package com.example.accessingdatamysql;
+package com.p2;
 
 import java.util.Optional;
 
