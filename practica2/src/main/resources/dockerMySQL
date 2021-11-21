@@ -1,1 +1,5 @@
 docker run --name mysqlspring -e MYSQL_ROOT_PASSWORD=prueba123 -p 3306:3306 -p 33060:33060 -d mysql:8.0
+
+mysql> create database spring_p2; -- Creates the new database
+mysql> create user 'spring_user'@'%' identified by 'cylonb0x'; -- Creates the user
+mysql> grant all on spring_p2.* to 'spring_user'@'%'; -- Gives all privileges to the new user on the newly created database

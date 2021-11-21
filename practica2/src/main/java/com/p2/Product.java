@@ -16,6 +16,8 @@ public class Product {
 	private String marca;
 	private String descripcion;
 	private double precio;
+	
+	//private ElementoCarrito ec;
 
 	public Product(String nombre, String marca, String descripcion, double precio) {
 		this.nombre = nombre;
@@ -49,7 +51,7 @@ public class Product {
 	public double getPrecio() {
 		return precio;
 	}
-
+	
 	public void setDescripcion(String descripcion) {
 		this.descripcion = descripcion;
 	}
