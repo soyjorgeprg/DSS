@@ -1,0 +1,4 @@
+com\example\accessingdatamysql\AccessingDataMysqlApplication.class
+com\example\accessingdatamysql\Product.class
+com\example\accessingdatamysql\ProductController.class
+com\example\accessingdatamysql\ProductRepository.class
